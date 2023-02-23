@@ -13,8 +13,6 @@ function onEntry(entry) {
   entry.forEach(change => {
     if (change.isIntersecting) {
       change.target.classList.add('products__visible');
-    } else {
-      change.target.classList.remove('products__visible');
     }
   });
 }
